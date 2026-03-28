@@ -58,6 +58,13 @@ export type AcademicPreparationContent = SectionContent & {
   closingText: string;
 };
 
+export type AboutContent = {
+  title: string;
+  intro: string;
+  story: string;
+  credentials: string[];
+};
+
 export type FinalCTAContent = {
   headline: string;
   text: string;
@@ -81,6 +88,7 @@ export type SiteContent = {
   whoWeHelp: SectionContent & {
     cards: CardItem[];
   };
+  about: AboutContent;
   services: SectionContent & {
     cards: IconCardItem[];
   };

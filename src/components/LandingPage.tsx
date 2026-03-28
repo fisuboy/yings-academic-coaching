@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { getContent } from "@/content/siteContent";
 import { Locale } from "@/types/content";
 import { AcademicPreparationSection } from "@/components/sections/AcademicPreparationSection";
+import { AboutSection } from "@/components/sections/AboutSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 import { Footer } from "@/components/sections/Footer";
@@ -32,6 +33,7 @@ export function LandingPage() {
       />
       <main>
         <HeroSection content={content.hero} />
+        <AboutSection content={content.about} />
         <WhoWeHelpSection content={content.whoWeHelp} />
         <ServicesSection content={content.services} />
         <AcademicPreparationSection content={content.academicPreparation} />

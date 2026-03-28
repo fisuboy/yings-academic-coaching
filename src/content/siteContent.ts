@@ -6,6 +6,7 @@ const englishContent: SiteContent = {
   header: {
     navLinks: [
       { label: "Home", href: "#home" },
+      { label: "About", href: "#about" },
       { label: "Services", href: "#services" },
       { label: "Academic Preparation", href: "#academic-preparation" },
       { label: "How It Works", href: "#how-it-works" },
@@ -57,13 +58,26 @@ const englishContent: SiteContent = {
       }
     ]
   },
+  about: {
+    title: "About Ying",
+    intro:
+      "A personal academic coaching approach built from real study experience in Spain and practical communication support.",
+    story:
+      "Ying supports students with a calm, structured approach focused on communication, confidence, and academic transition. Her guidance is shaped by both formal training and real experience helping students prepare for academic life in Spain.",
+    credentials: [
+      "Master's degree in International Economic Relations",
+      "First-hand study experience in Spain",
+      "IELTS-related English credential",
+      "Practical, real-world experience supporting students in this field"
+    ]
+  },
   services: {
     title: "Services",
     intro:
       "Focused, one-to-one support tailored to each student's academic goals and preparation needs.",
     cards: [
       {
-        title: "English Tutoring",
+        title: "English and Chinese Tutoring",
         description:
           "Personalized lessons to improve grammar, speaking, listening, writing, and academic vocabulary.",
         icon: "englishTutoring"
@@ -216,6 +230,7 @@ const englishContent: SiteContent = {
       "Academic coaching in English and Chinese, with a multilingual website for students preparing to study and adapt to life in Spain.",
     navLinks: [
       { label: "Home", href: "#home" },
+      { label: "About", href: "#about" },
       { label: "Services", href: "#services" },
       { label: "Academic Preparation", href: "#academic-preparation" },
       { label: "How It Works", href: "#how-it-works" },
