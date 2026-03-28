@@ -25,6 +25,7 @@ export type FAQItem = {
 };
 
 export type ContactItem = {
+  kind?: "email" | "wechat" | "whatsapp";
   label: string;
   value: string;
   href?: string;
@@ -65,6 +66,51 @@ export type AboutContent = {
   credentials: string[];
 };
 
+export type BookingOption = {
+  value: string;
+  label: string;
+};
+
+export type BookingContent = {
+  title: string;
+  intro: string;
+  responseTime: string;
+  fallbackContactLabel: string;
+  fallbackContactValue: string;
+  fallbackContactHref: string;
+  formTitle: string;
+  formDescription: string;
+  requiredNotice: string;
+  submitLabel: string;
+  successMessage: string;
+  fields: {
+    fullName: string;
+    email: string;
+    preferredContact: string;
+    contactHandle: string;
+    stage: string;
+    goals: string;
+    sessionLanguage: string;
+    timezone: string;
+  };
+  placeholders: {
+    goals: string;
+    timezone: string;
+    contactHandle: string;
+  };
+  options: {
+    preferredContact: BookingOption[];
+    stage: BookingOption[];
+    sessionLanguage: BookingOption[];
+  };
+  validation: {
+    fullNameRequired: string;
+    emailRequired: string;
+    emailInvalid: string;
+    goalsRequired: string;
+  };
+};
+
 export type FinalCTAContent = {
   headline: string;
   text: string;
@@ -89,6 +135,7 @@ export type SiteContent = {
     cards: CardItem[];
   };
   about: AboutContent;
+  booking: BookingContent;
   services: SectionContent & {
     cards: IconCardItem[];
   };

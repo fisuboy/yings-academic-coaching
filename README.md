@@ -2,6 +2,13 @@
 
 Polished, responsive landing page built with Next.js + Tailwind CSS for Ying's Academic Coaching.
 
+## Current Features
+
+- Fully localized content in English, Spanish, and Simplified Chinese
+- Language switcher with saved preference (`localStorage`)
+- Discovery call booking form (static-friendly mailto flow)
+- Responsive landing page sections with reusable components
+
 ## Quick Setup
 
 ### 1) Install dependencies

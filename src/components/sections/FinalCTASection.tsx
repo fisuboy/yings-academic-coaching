@@ -9,9 +9,9 @@ type FinalCTASectionProps = {
 };
 
 const contactIconMap: Record<string, ReactNode> = {
-  Email: <Mail className="h-4 w-4" />,
-  WeChat: <MessageCircleMore className="h-4 w-4" />,
-  WhatsApp: <MessagesSquare className="h-4 w-4" />
+  email: <Mail className="h-4 w-4" />,
+  wechat: <MessageCircleMore className="h-4 w-4" />,
+  whatsapp: <MessagesSquare className="h-4 w-4" />
 };
 
 export function FinalCTASection({ content }: FinalCTASectionProps) {
@@ -25,7 +25,7 @@ export function FinalCTASection({ content }: FinalCTASectionProps) {
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-200">{content.text}</p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <Button href="#contact">{content.primaryCta}</Button>
+              <Button href="#booking">{content.primaryCta}</Button>
               <Button href="#contact" variant="secondary">
                 {content.secondaryCta}
               </Button>
@@ -41,12 +41,12 @@ export function FinalCTASection({ content }: FinalCTASectionProps) {
                     href={contact.href}
                     className="mt-1 inline-flex items-center gap-2 text-base font-medium text-white transition-colors hover:text-gold"
                   >
-                    {contactIconMap[contact.label] ?? null}
+                    {contact.kind ? contactIconMap[contact.kind] ?? null : null}
                     {contact.value}
                   </a>
                 ) : (
                   <p className="mt-1 inline-flex items-center gap-2 text-base font-medium text-white">
-                    {contactIconMap[contact.label] ?? null}
+                    {contact.kind ? contactIconMap[contact.kind] ?? null : null}
                     {contact.value}
                   </p>
                 )}

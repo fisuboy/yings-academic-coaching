@@ -74,7 +74,7 @@ export function Header({
               ))}
             </div>
           </div>
-          <Button href="#contact" className="whitespace-nowrap">
+          <Button href="#booking" className="whitespace-nowrap">
             {primaryCtaLabel}
           </Button>
         </div>
@@ -133,7 +133,7 @@ export function Header({
             </div>
           </div>
           <p className="text-xs text-muted">{languageNotice}</p>
-          <Button href="#contact" className="w-full">
+          <Button href="#booking" className="w-full">
             {primaryCtaLabel}
           </Button>
         </div>

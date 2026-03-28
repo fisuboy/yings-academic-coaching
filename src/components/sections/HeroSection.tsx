@@ -20,7 +20,7 @@ export function HeroSection({ content }: HeroSectionProps) {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">{content.subheadline}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button href="#contact">{content.primaryCta}</Button>
+            <Button href="#booking">{content.primaryCta}</Button>
             <Button href="#contact" variant="secondary">
               {content.secondaryCta}
             </Button>
