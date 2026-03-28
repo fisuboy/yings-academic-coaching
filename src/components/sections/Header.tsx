@@ -35,25 +35,25 @@ export function Header({
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-navy/10 bg-warm/90 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-content items-center justify-between gap-4 px-4 py-3">
-        <a href="#home" className="text-lg font-bold text-navy">
+      <div className="mx-auto flex w-full max-w-content items-center justify-between gap-6 px-4 py-3">
+        <a href="#home" className="shrink-0 text-lg font-bold leading-tight text-navy sm:text-xl">
           {brandName}
         </a>
 
-        <nav className="hidden items-center gap-5 lg:flex" aria-label="Primary">
+        <nav className="hidden flex-1 items-center justify-center gap-6 xl:flex" aria-label="Primary">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-body transition-colors hover:text-terracotta focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy/25"
+              className="whitespace-nowrap text-sm font-medium text-body transition-colors hover:text-terracotta focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy/25"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
-          <div>
+        <div className="hidden shrink-0 items-center gap-3 xl:flex">
+          <div className="shrink-0">
             <p className="sr-only">{languageLabel}</p>
             <div className="inline-flex rounded-xl border border-navy/15 bg-white p-1">
               {localeLabels.map((item) => (
@@ -62,7 +62,7 @@ export function Header({
                   type="button"
                   onClick={() => onLocaleChange(item.code)}
                   className={cn(
-                    "rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/30",
+                    "whitespace-nowrap rounded-lg px-3 py-1.5 text-xs font-semibold leading-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/30",
                     locale === item.code
                       ? "bg-navy text-white"
                       : "text-body hover:bg-navy/5"
@@ -74,13 +74,15 @@ export function Header({
               ))}
             </div>
           </div>
-          <Button href="#contact">{primaryCtaLabel}</Button>
+          <Button href="#contact" className="whitespace-nowrap">
+            {primaryCtaLabel}
+          </Button>
         </div>
 
         <button
           type="button"
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="inline-flex rounded-lg p-2 text-navy focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy/30 lg:hidden"
+          className="inline-flex rounded-lg p-2 text-navy focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy/30 xl:hidden"
           aria-expanded={isMenuOpen}
           aria-controls="mobile-nav"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -89,14 +91,10 @@ export function Header({
         </button>
       </div>
 
-      <p className="mx-auto hidden w-full max-w-content px-4 pb-3 text-xs text-muted lg:block">
-        {languageNotice}
-      </p>
-
       <div
         id="mobile-nav"
         className={cn(
-          "overflow-hidden border-t border-navy/10 bg-surface transition-all duration-200 lg:hidden",
+          "overflow-hidden border-t border-navy/10 bg-surface transition-all duration-200 xl:hidden",
           isMenuOpen ? "max-h-[520px]" : "max-h-0"
         )}
       >

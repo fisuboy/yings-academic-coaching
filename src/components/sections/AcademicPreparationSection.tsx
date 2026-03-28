@@ -16,26 +16,27 @@ export function AcademicPreparationSection({
       intro={content.intro}
       className="bg-warm"
     >
-      <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-        <div className="rounded-2xl border border-navy/10 bg-white p-6 shadow-card">
-          <p className="text-sm font-semibold uppercase tracking-wide text-terracotta">
-            Preparation Focus
-          </p>
-          <p className="mt-4 text-lg leading-relaxed text-body">{content.closingText}</p>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {content.points.map((point) => (
-            <article
-              key={point}
-              className="rounded-2xl border border-navy/10 bg-surface p-5 shadow-card"
-            >
-              <div className="inline-flex rounded-lg bg-navy/5 p-2 text-navy">
+      <div className="rounded-2xl border border-navy/10 bg-white p-6 shadow-card sm:p-8">
+        <p className="text-sm font-semibold uppercase tracking-wide text-terracotta">
+          Preparation Focus
+        </p>
+        <p className="mt-4 max-w-4xl text-lg leading-relaxed text-body">{content.closingText}</p>
+      </div>
+
+      <div className="mt-6 grid gap-4 md:grid-cols-2">
+        {content.points.map((point) => (
+          <article
+            key={point}
+            className="rounded-2xl border border-navy/10 bg-surface p-5 shadow-card"
+          >
+            <div className="flex items-start gap-3">
+              <div className="inline-flex shrink-0 rounded-lg bg-navy/5 p-2 text-navy">
                 <Check className="h-4 w-4" />
               </div>
-              <p className="mt-3 leading-relaxed text-body">{point}</p>
-            </article>
-          ))}
-        </div>
+              <p className="pt-0.5 leading-relaxed text-body">{point}</p>
+            </div>
+          </article>
+        ))}
       </div>
     </Section>
   );

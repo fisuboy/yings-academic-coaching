@@ -27,7 +27,6 @@ const englishContent: SiteContent = {
     primaryCta: "Book a Discovery Call",
     secondaryCta: "Contact Us",
     trustItems: [
-      "Website: Chinese · Spanish · English",
       "Coaching: English + Chinese",
       "One-to-one support",
       "Online-first",
@@ -123,7 +122,8 @@ const englishContent: SiteContent = {
       "Support for presentations and spoken confidence",
       "Guidance on academic communication and classroom participation",
       "English-language preparation for study-related situations",
-      "Pre-arrival orientation for adapting to academic life in Spain"
+      "Pre-arrival orientation for adapting to academic life in Spain",
+      "Practice for clear academic email and day-to-day study communication"
     ],
     closingText:
       "The goal is to help students feel more prepared, communicate more clearly, and transition more smoothly into study life in Spain."
