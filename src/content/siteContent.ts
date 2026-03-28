@@ -312,109 +312,109 @@ const englishContent: SiteContent = {
 const spanishContent: SiteContent = {
   brandName: "Ying's Academic Coaching",
   localeTagline:
-    "Coaching academico en ingles y chino para estudiantes que se preparan para estudiar en España",
+    "Coaching académico en inglés y chino para estudiantes que se preparan para estudiar en España",
   header: {
     navLinks: [
       { label: "Inicio", href: "#home" },
       { label: "Sobre Ying", href: "#about" },
       { label: "Servicios", href: "#services" },
-      { label: "Preparacion Academica", href: "#academic-preparation" },
-      { label: "Como Funciona", href: "#how-it-works" },
+      { label: "Preparación Académica", href: "#academic-preparation" },
+      { label: "Cómo Funciona", href: "#how-it-works" },
       { label: "FAQ", href: "#faq" },
       { label: "Contacto", href: "#contact" }
     ],
     primaryCta: "Reservar llamada inicial",
     languageLabel: "Idioma",
     languageNotice:
-      "Las sesiones se ofrecen en ingles y chino. El sitio web esta disponible en chino, español e ingles."
+      "Las sesiones se ofrecen en inglés y chino. El sitio web está disponible en chino, español e inglés."
   },
   hero: {
     eyebrow:
-      "Coaching academico en ingles y chino para estudiantes que se preparan para estudiar en España",
-    headline: "Gana confianza para la vida academica en España",
+      "Coaching académico en inglés y chino para estudiantes que se preparan para estudiar en España",
+    headline: "Gana confianza para la vida académica en España",
     subheadline:
-      "Ying's Academic Coaching ofrece apoyo en ingles, preparacion de entrevistas, coaching de comunicacion academica y orientacion previa a la llegada para estudiantes que van a estudiar en España.",
+      "Ying's Academic Coaching ofrece apoyo en inglés, preparación de entrevistas, coaching de comunicación académica y orientación previa a la llegada para estudiantes que van a estudiar en España.",
     primaryCta: "Reservar llamada inicial",
     secondaryCta: "Contactar",
     trustItems: [
-      "Sesiones: ingles + chino",
+      "Sesiones: inglés + chino",
       "Apoyo individual",
       "Enfoque online",
-      "Preparacion personalizada"
+      "Preparación personalizada"
     ],
     visualEyebrow: "Visual de referencia",
-    visualTitle: "Preparacion calmada y practica para estudiar en España",
+    visualTitle: "Preparación calmada y práctica para estudiar en España",
     visualSubtitle: "Sustituye esta zona por tu imagen principal.",
     visualCards: [
-      { title: "Claridad academica", description: "Comunicacion clara y planificacion practica." },
-      { title: "Acompanamiento uno a uno", description: "Apoyo personalizado en cada sesion." }
+      { title: "Claridad académica", description: "Comunicación clara y planificación práctica." },
+      { title: "Acompañamiento uno a uno", description: "Apoyo personalizado en cada sesión." }
     ]
   },
   whoWeHelp: {
-    title: "Para Quien Es",
+    title: "Para Quién Es",
     intro:
-      "Apoyo personalizado para estudiantes que buscan mejor comunicacion, preparacion mas fluida y mayor confianza antes de estudiar en España.",
+      "Apoyo personalizado para estudiantes que buscan mejor comunicación, preparación más fluida y mayor confianza antes de estudiar en España.",
     cards: [
       {
         title: "Estudiantes que se preparan para mudarse a España",
         description:
-          "Fortalece tu ingles y preparate para las exigencias de comunicacion academica antes de llegar."
+          "Fortalece tu inglés y prepárate para las exigencias de comunicación académica antes de llegar."
       },
       {
-        title: "Estudiantes que quieren mas confianza en ingles academico",
+        title: "Estudiantes que quieren más confianza en inglés académico",
         description:
-          "Mejora expresion oral, escritura, presentaciones y participacion en clase con apoyo individual."
+          "Mejora expresión oral, escritura, presentaciones y participación en clase con apoyo individual."
       },
       {
-        title: "Estudiantes que se preparan para entrevistas y transicion academica",
+        title: "Estudiantes que se preparan para entrevistas y transición académica",
         description:
-          "Practica entrevistas, presentaciones y comunicacion de estudio para llegar con mas seguridad."
+          "Practica entrevistas, presentaciones y comunicación de estudio para llegar con más seguridad."
       }
     ]
   },
   about: {
     title: "Sobre Ying",
     intro:
-      "Un enfoque personal de coaching academico construido desde experiencia real de estudio en España y apoyo practico de comunicacion.",
+      "Un enfoque personal de coaching académico construido desde experiencia real de estudio en España y apoyo práctico de comunicación.",
     story:
-      "Ying acompana a estudiantes con una metodologia calmada y estructurada, centrada en comunicacion, confianza y transicion academica. Su orientacion combina formacion academica y experiencia real apoyando a estudiantes en su preparacion para estudiar en España.",
+      "Ying acompaña a estudiantes con una metodología calmada y estructurada, centrada en comunicación, confianza y transición académica. Su orientación combina formación académica y experiencia real apoyando a estudiantes en su preparación para estudiar en España.",
     highlightsTitle: "Aspectos destacados",
     credentials: [
-      "Master en Relaciones Economicas Internacionales",
+      "Máster en Relaciones Económicas Internacionales",
       "Experiencia de estudio en España en primera persona",
-      "Credencial de ingles relacionada con IELTS",
-      "Experiencia practica real en acompanamiento de estudiantes"
+      "Credencial de inglés relacionada con IELTS",
+      "Experiencia práctica real en acompañamiento de estudiantes"
     ]
   },
   booking: {
     title: "Reservar llamada inicial",
     intro:
-      "Comparte tus objetivos y tu situacion actual. Recibiras una recomendacion personalizada de los siguientes pasos.",
+      "Comparte tus objetivos y tu situación actual. Recibirás una recomendación personalizada de los siguientes pasos.",
     responseTime: "Normalmente respondemos en menos de 24 horas.",
     fallbackContactLabel: "Correo",
     fallbackContactValue: "hello@yingstutoring.com",
     fallbackContactHref: "mailto:hello@yingstutoring.com",
     formTitle: "Formulario de solicitud",
     formDescription:
-      "Al enviar, se abrira tu correo con todos los datos preparados para enviar.",
+      "Al enviar, se abrirá tu correo con todos los datos preparados para enviar.",
     requiredNotice: "* Campos obligatorios",
     submitLabel: "Enviar solicitud",
-    successMessage: "Gracias. El borrador de correo esta listo para enviar.",
+    successMessage: "Gracias. El borrador de correo está listo para enviar.",
     fields: {
       fullName: "Nombre completo",
-      email: "Correo electronico",
-      preferredContact: "Metodo de contacto preferido",
+      email: "Correo electrónico",
+      preferredContact: "Método de contacto preferido",
       contactHandle: "WeChat / WhatsApp / Otro contacto",
-      stage: "Situacion actual",
-      goals: "Que apoyo necesitas?",
+      stage: "Situación actual",
+      goals: "¿Qué apoyo necesitas?",
       sessionLanguage: "Idioma preferido para sesiones",
       timezone: "Zona horaria"
     },
     placeholders: {
       goals:
-        "Ejemplo: Me preparo para estudiar en España y quiero mejorar entrevistas y comunicacion academica.",
+        "Ejemplo: Me preparo para estudiar en España y quiero mejorar entrevistas y comunicación académica.",
       timezone: "Ejemplo: España (CET) / China (CST)",
-      contactHandle: "Ejemplo: ID de WeChat o numero de WhatsApp"
+      contactHandle: "Ejemplo: ID de WeChat o número de WhatsApp"
     },
     options: {
       preferredContact: [
@@ -425,83 +425,83 @@ const spanishContent: SiteContent = {
       stage: [
         { value: "pre-arrival", label: "Preparando estudios en España" },
         { value: "in-spain", label: "Ya estudiando en España" },
-        { value: "interview", label: "Preparacion de entrevistas/presentaciones" },
+        { value: "interview", label: "Preparación de entrevistas/presentaciones" },
         { value: "other", label: "Otro" }
       ],
       sessionLanguage: [
-        { value: "english", label: "Ingles" },
+        { value: "english", label: "Inglés" },
         { value: "chinese", label: "Chino" }
       ]
     },
     validation: {
       fullNameRequired: "Por favor, escribe tu nombre.",
       emailRequired: "Por favor, escribe tu correo.",
-      emailInvalid: "Por favor, usa un correo valido.",
+      emailInvalid: "Por favor, usa un correo válido.",
       goalsRequired: "Por favor, describe el apoyo que necesitas."
     }
   },
   services: {
     title: "Servicios",
     intro:
-      "Apoyo individual enfocado y adaptado a los objetivos academicos y necesidades de preparacion de cada estudiante.",
+      "Apoyo individual enfocado y adaptado a los objetivos académicos y necesidades de preparación de cada estudiante.",
     cards: [
       {
-        title: "Tutoria en ingles y chino",
+        title: "Tutoría en inglés y chino",
         description:
-          "Clases personalizadas para mejorar gramatica, expresion oral, escucha, escritura y vocabulario academico.",
+          "Clases personalizadas para mejorar gramática, expresión oral, escucha, escritura y vocabulario académico.",
         icon: "englishTutoring"
       },
       {
-        title: "Preparacion de entrevistas",
+        title: "Preparación de entrevistas",
         description:
-          "Practica estructurada para expresarte con mas claridad y confianza en contextos academicos formales.",
+          "Práctica estructurada para expresarte con más claridad y confianza en contextos académicos formales.",
         icon: "interviewPreparation"
       },
       {
-        title: "Coaching de comunicacion academica",
+        title: "Coaching de comunicación académica",
         description:
-          "Apoyo para presentaciones, participacion en clase, correos y comunicacion academica diaria.",
+          "Apoyo para presentaciones, participación en clase, correos y comunicación académica diaria.",
         icon: "academicCommunication"
       },
       {
-        title: "Confianza para presentaciones y expresion oral",
+        title: "Confianza para presentaciones y expresión oral",
         description:
-          "Desarrolla mejor estructura, mejor entrega y mas seguridad al hablar en contextos academicos.",
+          "Desarrolla mejor estructura, mejor entrega y más seguridad al hablar en contextos académicos.",
         icon: "presentationConfidence"
       },
       {
-        title: "Orientacion previa a la llegada",
+        title: "Orientación previa a la llegada",
         description:
-          "Preparacion para la vida academica en España con enfoque en expectativas, estilo de comunicacion y adaptacion.",
+          "Preparación para la vida académica en España con enfoque en expectativas, estilo de comunicación y adaptación.",
         icon: "preArrivalOrientation"
       },
       {
         title: "Apoyo personalizado uno a uno",
         description:
-          "Cada estudiante tiene objetivos distintos y cada sesion se adapta a su nivel, ritmo y prioridades.",
+          "Cada estudiante tiene objetivos distintos y cada sesión se adapta a su nivel, ritmo y prioridades.",
         icon: "personalizedSupport"
       }
     ]
   },
   academicPreparation: {
-    title: "Preparacion academica para España",
+    title: "Preparación académica para España",
     intro:
-      "Estudiar en España requiere mas que idioma. Tambien se necesita preparacion en comunicacion, confianza y adaptacion academica.",
-    focusLabel: "Enfoque de preparacion",
+      "Estudiar en España requiere más que idioma. También se necesita preparación en comunicación, confianza y adaptación académica.",
+    focusLabel: "Enfoque de preparación",
     points: [
-      "Preparacion de entrevistas en contextos academicos",
+      "Preparación de entrevistas en contextos académicos",
       "Apoyo para presentaciones y confianza oral",
-      "Guia para comunicacion academica y participacion en clase",
-      "Preparacion en ingles para situaciones de estudio",
-      "Orientacion previa para adaptarse a la vida academica en España",
-      "Practica para correos academicos y comunicacion diaria de estudio"
+      "Guía para comunicación académica y participación en clase",
+      "Preparación en inglés para situaciones de estudio",
+      "Orientación previa para adaptarse a la vida académica en España",
+      "Práctica para correos académicos y comunicación diaria de estudio"
     ],
     closingText:
-      "El objetivo es que cada estudiante llegue mejor preparado, se comunique con mayor claridad y se adapte de forma mas fluida a la vida academica en España."
+      "El objetivo es que cada estudiante llegue mejor preparado, se comunique con mayor claridad y se adapte de forma más fluida a la vida académica en España."
   },
   howItWorks: {
-    title: "Como Funciona",
-    intro: "Un proceso claro con pasos practicos y apoyo personalizado.",
+    title: "Cómo Funciona",
+    intro: "Un proceso claro con pasos prácticos y apoyo personalizado.",
     steps: [
       {
         title: "Comparte tus objetivos",
@@ -511,7 +511,7 @@ const spanishContent: SiteContent = {
       {
         title: "Recibe un plan personalizado",
         description:
-          "Proponemos el mejor enfoque: ingles, entrevistas, comunicacion academica u orientacion."
+          "Proponemos el mejor enfoque: inglés, entrevistas, comunicación académica u orientación."
       },
       {
         title: "Comienza tus sesiones",
@@ -521,73 +521,73 @@ const spanishContent: SiteContent = {
     ]
   },
   whyChoose: {
-    title: "Por que los estudiantes eligen este apoyo",
+    title: "Por qué los estudiantes eligen este apoyo",
     intro:
-      "Muchos estudiantes necesitan mas que clases de idioma. Necesitan preparacion personal, practica y util para la vida academica real.",
+      "Muchos estudiantes necesitan más que clases de idioma. Necesitan preparación personal, práctica y útil para la vida académica real.",
     cards: [
       {
-        title: "Web multilingue, coaching bilingue",
+        title: "Web multilingüe, coaching bilingüe",
         description:
-          "La web esta en chino, español e ingles. Las sesiones se enfocan en ingles y chino.",
+          "La web está en chino, español e inglés. Las sesiones se enfocan en inglés y chino.",
         icon: "multilingualAccess"
       },
       {
-        title: "Disenado para la ruta academica en España",
+        title: "Diseñado para la ruta académica en España",
         description:
-          "Preparacion alineada con los retos reales de comunicacion y adaptacion en España.",
+          "Preparación alineada con los retos reales de comunicación y adaptación en España.",
         icon: "spainStudyPath"
       },
       {
-        title: "Orientacion individual personalizada",
+        title: "Orientación individual personalizada",
         description:
-          "Sin programas genericos. El apoyo se adapta a la direccion academica, nivel y tiempo de cada estudiante.",
+          "Sin programas genéricos. El apoyo se adapta a la dirección académica, nivel y tiempo de cada estudiante.",
         icon: "personalizedGuidance"
       },
       {
-        title: "Enfoque calmado y practico",
+        title: "Enfoque calmado y práctico",
         description:
-          "Apoyo claro para comunicacion, preparacion y confianza sin complejidad innecesaria.",
+          "Apoyo claro para comunicación, preparación y confianza sin complejidad innecesaria.",
         icon: "calmApproach"
       }
     ]
   },
   supportiveApproach: {
     title: "Un enfoque calmado y de apoyo",
-    text: "En Ying's Academic Coaching, el objetivo es ayudar a cada estudiante a avanzar con mas claridad, mejor comunicacion y mejor preparacion para la vida academica en España. El apoyo siempre es personalizado, practico y adaptado a cada situacion."
+    text: "En Ying's Academic Coaching, el objetivo es ayudar a cada estudiante a avanzar con más claridad, mejor comunicación y mejor preparación para la vida académica en España. El apoyo siempre es personalizado, práctico y adaptado a cada situación."
   },
   faq: {
     title: "Preguntas Frecuentes",
     items: [
       {
-        question: "Ofrecen apoyo antes de llegar a España?",
+        question: "¿Ofrecen apoyo antes de llegar a España?",
         answer:
-          "Si. El apoyo puede empezar antes de la llegada, especialmente para ingles, entrevistas y preparacion para la vida academica en España."
+          "Sí. El apoyo puede empezar antes de la llegada, especialmente para inglés, entrevistas y preparación para la vida académica en España."
       },
       {
-        question: "Que idiomas se usan en las sesiones?",
+        question: "¿Qué idiomas se usan en las sesiones?",
         answer:
-          "Las sesiones se ofrecen en ingles y chino. La web tambien esta disponible en español, chino e ingles."
+          "Las sesiones se ofrecen en inglés y chino. La web también está disponible en español, chino e inglés."
       },
       {
-        question: "Incluyen entrevistas y comunicacion academica?",
+        question: "¿Incluyen entrevistas y comunicación académica?",
         answer:
-          "Si. El apoyo puede incluir preparacion de entrevistas, confianza oral, coaching de presentaciones y practica de comunicacion para contextos academicos."
+          "Sí. El apoyo puede incluir preparación de entrevistas, confianza oral, coaching de presentaciones y práctica de comunicación para contextos académicos."
       },
       {
-        question: "Las sesiones son online o presenciales?",
+        question: "¿Las sesiones son online o presenciales?",
         answer:
-          "Principalmente online. La disponibilidad presencial depende de ubicacion y agenda."
+          "Principalmente online. La disponibilidad presencial depende de ubicación y agenda."
       },
       {
-        question: "Es solo tutoria de ingles?",
+        question: "¿Es solo tutoría de inglés?",
         answer:
-          "No. La tutoria de ingles es una parte del servicio. Tambien incluye entrevistas, comunicacion academica y orientacion previa a la llegada."
+          "No. La tutoría de inglés es una parte del servicio. También incluye entrevistas, comunicación académica y orientación previa a la llegada."
       }
     ]
   },
   finalCta: {
-    headline: "Consigue coaching academico personalizado para estudiar en España",
-    text: "Si necesitas apoyo con ingles, entrevistas, comunicacion academica o preparacion previa, Ying's Academic Coaching ofrece acompanamiento uno a uno adaptado a tus objetivos.",
+    headline: "Consigue coaching académico personalizado para estudiar en España",
+    text: "Si necesitas apoyo con inglés, entrevistas, comunicación académica o preparación previa, Ying's Academic Coaching ofrece acompañamiento uno a uno adaptado a tus objetivos.",
     primaryCta: "Reservar llamada inicial",
     secondaryCta: "Contactar",
     contacts: [
@@ -603,18 +603,18 @@ const spanishContent: SiteContent = {
   },
   footer: {
     description:
-      "Coaching academico en ingles y chino, con sitio web multilingue para estudiantes que se preparan para estudiar y adaptarse en España.",
+      "Coaching académico en inglés y chino, con sitio web multilingüe para estudiantes que se preparan para estudiar y adaptarse en España.",
     navLinks: [
       { label: "Inicio", href: "#home" },
       { label: "Sobre Ying", href: "#about" },
       { label: "Servicios", href: "#services" },
-      { label: "Preparacion", href: "#academic-preparation" },
-      { label: "Como Funciona", href: "#how-it-works" },
+      { label: "Preparación", href: "#academic-preparation" },
+      { label: "Cómo Funciona", href: "#how-it-works" },
       { label: "FAQ", href: "#faq" },
       { label: "Contacto", href: "#contact" }
     ],
     privacyLabel: "Privacidad",
-    termsLabel: "Terminos"
+    termsLabel: "Términos"
   }
 };
 
