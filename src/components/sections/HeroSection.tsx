@@ -42,20 +42,18 @@ export function HeroSection({ content }: HeroSectionProps) {
             <div className="absolute -right-5 bottom-4 h-20 w-20 rounded-full bg-terracotta/20 blur-xl" />
             <div className="relative rounded-2xl border border-navy/10 bg-white/95 p-6">
               <p className="text-sm font-semibold uppercase tracking-wide text-terracotta">
-                Placeholder Visual
+                {content.visualEyebrow}
               </p>
               <h2 className="mt-3 text-2xl font-semibold text-navy">{content.visualTitle}</h2>
               <p className="mt-4 leading-relaxed text-muted">{content.visualSubtitle}</p>
             </div>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              <div className="rounded-xl border border-navy/10 bg-white p-4">
-                <p className="text-sm font-semibold text-navy">Academic Clarity</p>
-                <p className="mt-1 text-xs text-muted">Clear communication and practical planning.</p>
-              </div>
-              <div className="rounded-xl border border-navy/10 bg-white p-4">
-                <p className="text-sm font-semibold text-navy">One-to-One Guidance</p>
-                <p className="mt-1 text-xs text-muted">Personalized support every session.</p>
-              </div>
+              {content.visualCards.map((card) => (
+                <div key={card.title} className="rounded-xl border border-navy/10 bg-white p-4">
+                  <p className="text-sm font-semibold text-navy">{card.title}</p>
+                  <p className="mt-1 text-xs text-muted">{card.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

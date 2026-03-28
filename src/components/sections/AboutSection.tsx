@@ -23,7 +23,7 @@ export function AboutSection({ content }: AboutSectionProps) {
             <div className="inline-flex rounded-xl bg-terracotta/10 p-3 text-terracotta" aria-hidden="true">
               <GraduationCap className="h-5 w-5" />
             </div>
-            <h3 className="mt-4 text-xl font-semibold text-navy">Background Highlights</h3>
+            <h3 className="mt-4 text-xl font-semibold text-navy">{content.highlightsTitle}</h3>
             <ul className="mt-4 space-y-3">
               {content.credentials.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-body">

@@ -45,8 +45,10 @@ export type HeroContent = {
   primaryCta: string;
   secondaryCta: string;
   trustItems: string[];
+  visualEyebrow: string;
   visualTitle: string;
   visualSubtitle: string;
+  visualCards: CardItem[];
 };
 
 export type SectionContent = {
@@ -55,6 +57,7 @@ export type SectionContent = {
 };
 
 export type AcademicPreparationContent = SectionContent & {
+  focusLabel: string;
   points: string[];
   closingText: string;
 };
@@ -63,6 +66,7 @@ export type AboutContent = {
   title: string;
   intro: string;
   story: string;
+  highlightsTitle: string;
   credentials: string[];
 };
 

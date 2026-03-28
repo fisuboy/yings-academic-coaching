@@ -32,8 +32,13 @@ const englishContent: SiteContent = {
       "Online-first",
       "Personalized preparation"
     ],
+    visualEyebrow: "Placeholder Visual",
     visualTitle: "Calm, practical preparation for study life in Spain",
-    visualSubtitle: "Replace this area with your own study-focused hero image."
+    visualSubtitle: "Replace this area with your own study-focused hero image.",
+    visualCards: [
+      { title: "Academic Clarity", description: "Clear communication and practical planning." },
+      { title: "One-to-One Guidance", description: "Personalized support every session." }
+    ]
   },
   whoWeHelp: {
     title: "Who This Is For",
@@ -63,6 +68,7 @@ const englishContent: SiteContent = {
       "A personal academic coaching approach built from real study experience in Spain and practical communication support.",
     story:
       "Ying supports students with a calm, structured approach focused on communication, confidence, and academic transition. Her guidance is shaped by both formal training and real experience helping students prepare for academic life in Spain.",
+    highlightsTitle: "Background Highlights",
     credentials: [
       "Master's degree in International Economic Relations",
       "First-hand study experience in Spain",
@@ -172,6 +178,7 @@ const englishContent: SiteContent = {
     title: "Academic Preparation for Spain",
     intro:
       "Studying in Spain requires more than language ability. Students also benefit from preparation in communication, confidence, and academic adaptation.",
+    focusLabel: "Preparation Focus",
     points: [
       "Interview preparation for academic contexts",
       "Support for presentations and spoken confidence",
@@ -305,7 +312,7 @@ const englishContent: SiteContent = {
 const spanishContent: SiteContent = {
   brandName: "Ying's Academic Coaching",
   localeTagline:
-    "Coaching academico en ingles y chino para estudiantes que se preparan para estudiar en Espana",
+    "Coaching academico en ingles y chino para estudiantes que se preparan para estudiar en España",
   header: {
     navLinks: [
       { label: "Inicio", href: "#home" },
@@ -319,14 +326,14 @@ const spanishContent: SiteContent = {
     primaryCta: "Reservar llamada inicial",
     languageLabel: "Idioma",
     languageNotice:
-      "Las sesiones se ofrecen en ingles y chino. El sitio web esta disponible en chino, espanol e ingles."
+      "Las sesiones se ofrecen en ingles y chino. El sitio web esta disponible en chino, español e ingles."
   },
   hero: {
     eyebrow:
-      "Coaching academico en ingles y chino para estudiantes que se preparan para estudiar en Espana",
-    headline: "Gana confianza para la vida academica en Espana",
+      "Coaching academico en ingles y chino para estudiantes que se preparan para estudiar en España",
+    headline: "Gana confianza para la vida academica en España",
     subheadline:
-      "Ying's Academic Coaching ofrece apoyo en ingles, preparacion de entrevistas, coaching de comunicacion academica y orientacion previa a la llegada para estudiantes que van a estudiar en Espana.",
+      "Ying's Academic Coaching ofrece apoyo en ingles, preparacion de entrevistas, coaching de comunicacion academica y orientacion previa a la llegada para estudiantes que van a estudiar en España.",
     primaryCta: "Reservar llamada inicial",
     secondaryCta: "Contactar",
     trustItems: [
@@ -335,16 +342,21 @@ const spanishContent: SiteContent = {
       "Enfoque online",
       "Preparacion personalizada"
     ],
-    visualTitle: "Preparacion calmada y practica para estudiar en Espana",
-    visualSubtitle: "Sustituye esta zona por tu imagen principal."
+    visualEyebrow: "Visual de referencia",
+    visualTitle: "Preparacion calmada y practica para estudiar en España",
+    visualSubtitle: "Sustituye esta zona por tu imagen principal.",
+    visualCards: [
+      { title: "Claridad academica", description: "Comunicacion clara y planificacion practica." },
+      { title: "Acompanamiento uno a uno", description: "Apoyo personalizado en cada sesion." }
+    ]
   },
   whoWeHelp: {
     title: "Para Quien Es",
     intro:
-      "Apoyo personalizado para estudiantes que buscan mejor comunicacion, preparacion mas fluida y mayor confianza antes de estudiar en Espana.",
+      "Apoyo personalizado para estudiantes que buscan mejor comunicacion, preparacion mas fluida y mayor confianza antes de estudiar en España.",
     cards: [
       {
-        title: "Estudiantes que se preparan para mudarse a Espana",
+        title: "Estudiantes que se preparan para mudarse a España",
         description:
           "Fortalece tu ingles y preparate para las exigencias de comunicacion academica antes de llegar."
       },
@@ -363,12 +375,13 @@ const spanishContent: SiteContent = {
   about: {
     title: "Sobre Ying",
     intro:
-      "Un enfoque personal de coaching academico construido desde experiencia real de estudio en Espana y apoyo practico de comunicacion.",
+      "Un enfoque personal de coaching academico construido desde experiencia real de estudio en España y apoyo practico de comunicacion.",
     story:
-      "Ying acompana a estudiantes con una metodologia calmada y estructurada, centrada en comunicacion, confianza y transicion academica. Su orientacion combina formacion academica y experiencia real apoyando a estudiantes en su preparacion para estudiar en Espana.",
+      "Ying acompana a estudiantes con una metodologia calmada y estructurada, centrada en comunicacion, confianza y transicion academica. Su orientacion combina formacion academica y experiencia real apoyando a estudiantes en su preparacion para estudiar en España.",
+    highlightsTitle: "Aspectos destacados",
     credentials: [
       "Master en Relaciones Economicas Internacionales",
-      "Experiencia de estudio en Espana en primera persona",
+      "Experiencia de estudio en España en primera persona",
       "Credencial de ingles relacionada con IELTS",
       "Experiencia practica real en acompanamiento de estudiantes"
     ]
@@ -399,8 +412,8 @@ const spanishContent: SiteContent = {
     },
     placeholders: {
       goals:
-        "Ejemplo: Me preparo para estudiar en Espana y quiero mejorar entrevistas y comunicacion academica.",
-      timezone: "Ejemplo: Espana (CET) / China (CST)",
+        "Ejemplo: Me preparo para estudiar en España y quiero mejorar entrevistas y comunicacion academica.",
+      timezone: "Ejemplo: España (CET) / China (CST)",
       contactHandle: "Ejemplo: ID de WeChat o numero de WhatsApp"
     },
     options: {
@@ -410,8 +423,8 @@ const spanishContent: SiteContent = {
         { value: "whatsapp", label: "WhatsApp" }
       ],
       stage: [
-        { value: "pre-arrival", label: "Preparando estudios en Espana" },
-        { value: "in-spain", label: "Ya estudiando en Espana" },
+        { value: "pre-arrival", label: "Preparando estudios en España" },
+        { value: "in-spain", label: "Ya estudiando en España" },
         { value: "interview", label: "Preparacion de entrevistas/presentaciones" },
         { value: "other", label: "Otro" }
       ],
@@ -459,7 +472,7 @@ const spanishContent: SiteContent = {
       {
         title: "Orientacion previa a la llegada",
         description:
-          "Preparacion para la vida academica en Espana con enfoque en expectativas, estilo de comunicacion y adaptacion.",
+          "Preparacion para la vida academica en España con enfoque en expectativas, estilo de comunicacion y adaptacion.",
         icon: "preArrivalOrientation"
       },
       {
@@ -471,19 +484,20 @@ const spanishContent: SiteContent = {
     ]
   },
   academicPreparation: {
-    title: "Preparacion academica para Espana",
+    title: "Preparacion academica para España",
     intro:
-      "Estudiar en Espana requiere mas que idioma. Tambien se necesita preparacion en comunicacion, confianza y adaptacion academica.",
+      "Estudiar en España requiere mas que idioma. Tambien se necesita preparacion en comunicacion, confianza y adaptacion academica.",
+    focusLabel: "Enfoque de preparacion",
     points: [
       "Preparacion de entrevistas en contextos academicos",
       "Apoyo para presentaciones y confianza oral",
       "Guia para comunicacion academica y participacion en clase",
       "Preparacion en ingles para situaciones de estudio",
-      "Orientacion previa para adaptarse a la vida academica en Espana",
+      "Orientacion previa para adaptarse a la vida academica en España",
       "Practica para correos academicos y comunicacion diaria de estudio"
     ],
     closingText:
-      "El objetivo es que cada estudiante llegue mejor preparado, se comunique con mayor claridad y se adapte de forma mas fluida a la vida academica en Espana."
+      "El objetivo es que cada estudiante llegue mejor preparado, se comunique con mayor claridad y se adapte de forma mas fluida a la vida academica en España."
   },
   howItWorks: {
     title: "Como Funciona",
@@ -514,13 +528,13 @@ const spanishContent: SiteContent = {
       {
         title: "Web multilingue, coaching bilingue",
         description:
-          "La web esta en chino, espanol e ingles. Las sesiones se enfocan en ingles y chino.",
+          "La web esta en chino, español e ingles. Las sesiones se enfocan en ingles y chino.",
         icon: "multilingualAccess"
       },
       {
-        title: "Disenado para la ruta academica en Espana",
+        title: "Disenado para la ruta academica en España",
         description:
-          "Preparacion alineada con los retos reales de comunicacion y adaptacion en Espana.",
+          "Preparacion alineada con los retos reales de comunicacion y adaptacion en España.",
         icon: "spainStudyPath"
       },
       {
@@ -539,20 +553,20 @@ const spanishContent: SiteContent = {
   },
   supportiveApproach: {
     title: "Un enfoque calmado y de apoyo",
-    text: "En Ying's Academic Coaching, el objetivo es ayudar a cada estudiante a avanzar con mas claridad, mejor comunicacion y mejor preparacion para la vida academica en Espana. El apoyo siempre es personalizado, practico y adaptado a cada situacion."
+    text: "En Ying's Academic Coaching, el objetivo es ayudar a cada estudiante a avanzar con mas claridad, mejor comunicacion y mejor preparacion para la vida academica en España. El apoyo siempre es personalizado, practico y adaptado a cada situacion."
   },
   faq: {
     title: "Preguntas Frecuentes",
     items: [
       {
-        question: "Ofrecen apoyo antes de llegar a Espana?",
+        question: "Ofrecen apoyo antes de llegar a España?",
         answer:
-          "Si. El apoyo puede empezar antes de la llegada, especialmente para ingles, entrevistas y preparacion para la vida academica en Espana."
+          "Si. El apoyo puede empezar antes de la llegada, especialmente para ingles, entrevistas y preparacion para la vida academica en España."
       },
       {
         question: "Que idiomas se usan en las sesiones?",
         answer:
-          "Las sesiones se ofrecen en ingles y chino. La web tambien esta disponible en espanol, chino e ingles."
+          "Las sesiones se ofrecen en ingles y chino. La web tambien esta disponible en español, chino e ingles."
       },
       {
         question: "Incluyen entrevistas y comunicacion academica?",
@@ -572,7 +586,7 @@ const spanishContent: SiteContent = {
     ]
   },
   finalCta: {
-    headline: "Consigue coaching academico personalizado para estudiar en Espana",
+    headline: "Consigue coaching academico personalizado para estudiar en España",
     text: "Si necesitas apoyo con ingles, entrevistas, comunicacion academica o preparacion previa, Ying's Academic Coaching ofrece acompanamiento uno a uno adaptado a tus objetivos.",
     primaryCta: "Reservar llamada inicial",
     secondaryCta: "Contactar",
@@ -589,7 +603,7 @@ const spanishContent: SiteContent = {
   },
   footer: {
     description:
-      "Coaching academico en ingles y chino, con sitio web multilingue para estudiantes que se preparan para estudiar y adaptarse en Espana.",
+      "Coaching academico en ingles y chino, con sitio web multilingue para estudiantes que se preparan para estudiar y adaptarse en España.",
     navLinks: [
       { label: "Inicio", href: "#home" },
       { label: "Sobre Ying", href: "#about" },
@@ -629,8 +643,13 @@ const chineseContent: SiteContent = {
     primaryCta: "预约咨询通话",
     secondaryCta: "联系我们",
     trustItems: ["授课语言：英语 + 中文", "一对一支持", "线上为主", "个性化准备"],
+    visualEyebrow: "示意视觉",
     visualTitle: "为西班牙学习生活提供冷静、实用的准备支持",
-    visualSubtitle: "可在此替换为你的品牌主视觉图片。"
+    visualSubtitle: "可在此替换为你的品牌主视觉图片。",
+    visualCards: [
+      { title: "学术表达更清晰", description: "沟通更明确，学习规划更实用。" },
+      { title: "一对一指导", description: "每次课程都根据你的目标进行调整。" }
+    ]
   },
   whoWeHelp: {
     title: "适合哪些学生",
@@ -658,6 +677,7 @@ const chineseContent: SiteContent = {
     intro: "基于在西班牙真实学习经历与实践支持经验的个性化学术辅导方式。",
     story:
       "Ying 以冷静、结构化的方式支持学生，重点提升沟通能力、学习信心与学术过渡准备。她的指导来自系统学术训练，也来自长期的一线学生支持经验。",
+    highlightsTitle: "背景亮点",
     credentials: [
       "国际经济关系硕士学位",
       "在西班牙的真实学习经历",
@@ -755,6 +775,7 @@ const chineseContent: SiteContent = {
   academicPreparation: {
     title: "西班牙学习学术准备",
     intro: "在西班牙学习不仅需要语言能力，也需要沟通、自信与学术适应方面的准备。",
+    focusLabel: "准备重点",
     points: [
       "面向学术场景的面试准备",
       "演讲表达与口语自信支持",

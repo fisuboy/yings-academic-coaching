@@ -18,7 +18,7 @@ export function AcademicPreparationSection({
     >
       <div className="rounded-2xl border border-navy/10 bg-white p-6 shadow-card sm:p-8">
         <p className="text-sm font-semibold uppercase tracking-wide text-terracotta">
-          Preparation Focus
+          {content.focusLabel}
         </p>
         <p className="mt-4 max-w-4xl text-lg leading-relaxed text-body">{content.closingText}</p>
       </div>
