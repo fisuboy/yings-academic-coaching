@@ -63,41 +63,26 @@ Deploy the `out/` directory to any static host:
 
 ## Project Structure
 
-Key files:
-
-- Main localized site content:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/content/siteContent.ts`
-- Legal / privacy / cookie content:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/content/legalContent.ts`
-- Locale helpers and persistence:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/lib/locale.ts`
-- Booking submission helper:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/lib/bookingSubmission.ts`
-- Consent / cookie banner config:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/lib/consent.ts`
-- Main landing page composition:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/components/LandingPage.tsx`
-
-App routes:
-
-- Home:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/app/page.tsx`
-- Privacy Policy:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/app/privacy-policy/page.tsx`
-- Cookie Policy:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/app/cookie-policy/page.tsx`
-- Legal Notice:
-  - `/Users/fisuboy/Documents/yingsTutoring/src/app/legal-notice/page.tsx`
+- `src/content/siteContent.ts` — main multilingual site content
+- `src/content/legalContent.ts` — privacy, cookie, and legal-page content
+- `src/lib/locale.ts` — locale persistence and helpers
+- `src/lib/bookingSubmission.ts` — booking form submission logic
+- `src/lib/consent.ts` — privacy/cookie banner settings
+- `src/components/LandingPage.tsx` — homepage composition
+- `src/app/page.tsx` — home route
+- `src/app/privacy-policy/page.tsx` — Privacy Policy page
+- `src/app/cookie-policy/page.tsx` — Cookie Policy page
+- `src/app/legal-notice/page.tsx` — Legal Notice page
 
 ## Editing Content
 
 Homepage and booking content is centralized in:
 
-- `/Users/fisuboy/Documents/yingsTutoring/src/content/siteContent.ts`
+- `src/content/siteContent.ts`
 
 Legal and privacy content is centralized in:
 
-- `/Users/fisuboy/Documents/yingsTutoring/src/content/legalContent.ts`
+- `src/content/legalContent.ts`
 
 English is the master source for structure and meaning. Spanish, Simplified Chinese, and Catalan follow the same content architecture.
 
@@ -114,12 +99,12 @@ The submission layer is prepared so it can be connected to:
 
 Current integration point:
 
-- `/Users/fisuboy/Documents/yingsTutoring/src/lib/bookingSubmission.ts`
+- `src/lib/bookingSubmission.ts`
 
 If you connect Formspree, update the submission endpoint/config there and review the privacy-policy text in:
 
-- `/Users/fisuboy/Documents/yingsTutoring/src/content/legalContent.ts`
-- `/Users/fisuboy/Documents/yingsTutoring/src/content/siteContent.ts`
+- `src/content/legalContent.ts`
+- `src/content/siteContent.ts`
 
 ## Localization Notes
 
