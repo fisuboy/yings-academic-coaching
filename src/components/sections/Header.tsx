@@ -16,10 +16,11 @@ type HeaderProps = {
   onLocaleChange: (locale: Locale) => void;
 };
 
-const localeLabels: Array<{ code: Locale; label: string }> = [
-  { code: "zh", label: "中文" },
-  { code: "es", label: "ES" },
-  { code: "en", label: "EN" }
+const localeLabels: Array<{ code: Locale; label: string; ariaLabel: string }> = [
+  { code: "zh", label: "ZH", ariaLabel: "Chinese" },
+  { code: "en", label: "EN", ariaLabel: "English" },
+  { code: "es", label: "ES", ariaLabel: "Español" },
+  { code: "ca", label: "CA", ariaLabel: "Català" }
 ];
 
 export function Header({
@@ -32,15 +33,30 @@ export function Header({
   onLocaleChange
 }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [logoLoadFailed, setLogoLoadFailed] = useState(false);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-navy/10 bg-warm/90 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-content items-center justify-between gap-6 px-4 py-3">
-        <a href="#home" className="shrink-0 text-lg font-bold leading-tight text-navy sm:text-xl">
-          {brandName}
+      <div className="mx-auto flex w-full max-w-content items-center justify-between gap-4 px-4 py-3 xl:grid xl:grid-cols-[minmax(220px,250px)_1fr_auto] xl:items-center">
+        <a
+          href="#home"
+          aria-label={brandName}
+          className="flex shrink-0 items-center rounded-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy/25 xl:min-w-0"
+        >
+          {logoLoadFailed ? (
+            <span className="text-lg font-bold leading-tight text-navy sm:text-xl">{brandName}</span>
+          ) : (
+            // Replace this file with your final logo image.
+            <img
+              src="/logo/yings-academic-coaching-logo-header.png"
+              alt={brandName}
+              className="h-12 w-auto max-w-[220px] object-contain object-left sm:h-14 sm:max-w-[250px]"
+              onError={() => setLogoLoadFailed(true)}
+            />
+          )}
         </a>
 
-        <nav className="hidden flex-1 items-center justify-center gap-6 xl:flex" aria-label="Primary">
+        <nav className="hidden items-center justify-center gap-5 xl:flex 2xl:gap-6" aria-label="Primary">
           {links.map((link) => (
             <a
               key={link.href}
@@ -52,7 +68,7 @@ export function Header({
           ))}
         </nav>
 
-        <div className="hidden shrink-0 items-center gap-3 xl:flex">
+        <div className="hidden shrink-0 items-center justify-self-end gap-2 xl:flex 2xl:gap-3">
           <div className="shrink-0">
             <p className="sr-only">{languageLabel}</p>
             <div className="inline-flex rounded-xl border border-navy/15 bg-white p-1">
@@ -62,19 +78,20 @@ export function Header({
                   type="button"
                   onClick={() => onLocaleChange(item.code)}
                   className={cn(
-                    "whitespace-nowrap rounded-lg px-3 py-1.5 text-xs font-semibold leading-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/30",
+                    "min-w-11 whitespace-nowrap rounded-lg px-3 py-1.5 text-xs font-semibold leading-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/30",
                     locale === item.code
                       ? "bg-navy text-white"
                       : "text-body hover:bg-navy/5"
                   )}
                   aria-pressed={locale === item.code}
+                  aria-label={item.ariaLabel}
                 >
                   {item.label}
                 </button>
               ))}
             </div>
           </div>
-          <Button href="#booking" className="whitespace-nowrap">
+          <Button href="#booking" className="whitespace-nowrap px-4 py-2 text-[13px] 2xl:px-5 2xl:py-2.5 2xl:text-sm">
             {primaryCtaLabel}
           </Button>
         </div>
@@ -120,12 +137,13 @@ export function Header({
                   type="button"
                   onClick={() => onLocaleChange(item.code)}
                   className={cn(
-                    "rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/30",
+                    "min-w-11 rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/30",
                     locale === item.code
                       ? "bg-navy text-white"
                       : "text-body hover:bg-navy/5"
                   )}
                   aria-pressed={locale === item.code}
+                  aria-label={item.ariaLabel}
                 >
                   {item.label}
                 </button>

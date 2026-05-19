@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_SC } from "next/font/google";
+import { PrivacyCookieBanner } from "@/components/legal/PrivacyCookieBanner";
 import "./globals.css";
 
 const inter = Inter({
@@ -15,9 +16,9 @@ const notoSansSC = Noto_Sans_SC({
 });
 
 export const metadata: Metadata = {
-  title: "Ying's Academic Coaching | English & Chinese Support for Study in Spain",
+  title: "Ying's Academic Coaching | Professional English Training and Communication Support",
   description:
-    "One-to-one academic coaching and tutoring in English and Chinese for students preparing for academic life in Spain, with a multilingual website experience."
+    "Barcelona-based, online-first one-to-one professional English training, interview and oral-expression preparation, academic communication support, and pre-arrival communication preparation for Spain."
 };
 
 export default function RootLayout({
@@ -25,12 +26,32 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const localeInitScript = `
+    (function() {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var urlLocale = params.get('lang');
+        var storedLocale = window.localStorage.getItem('site-locale');
+        var locale = urlLocale === 'zh' || urlLocale === 'en' || urlLocale === 'es' || urlLocale === 'ca'
+          ? urlLocale
+          : (storedLocale === 'zh' || storedLocale === 'en' || storedLocale === 'es' || storedLocale === 'ca' ? storedLocale : 'en');
+        window.localStorage.setItem('site-locale', locale);
+        document.documentElement.lang = locale;
+        document.documentElement.dataset.siteLocale = locale;
+      } catch (error) {}
+    })();
+  `;
+
   return (
-    <html lang="zh">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: localeInitScript }} />
+      </head>
       <body
         className={`${inter.variable} ${notoSansSC.variable} bg-warm font-sans text-body antialiased`}
       >
         {children}
+        <PrivacyCookieBanner />
       </body>
     </html>
   );

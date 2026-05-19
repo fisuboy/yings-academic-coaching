@@ -33,6 +33,7 @@ export function ServicesSection({ content }: ServicesSectionProps) {
             key={card.title}
             title={card.title}
             description={card.description}
+            details={card.details}
             icon={iconMap[card.icon]}
           />
         ))}

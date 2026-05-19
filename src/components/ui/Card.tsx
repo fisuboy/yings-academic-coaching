@@ -4,11 +4,12 @@ import { cn } from "@/lib/cn";
 type CardProps = {
   title: string;
   description: string;
+  details?: string[];
   icon?: ReactNode;
   className?: string;
 };
 
-export function Card({ title, description, icon, className }: CardProps) {
+export function Card({ title, description, details, icon, className }: CardProps) {
   return (
     <article
       className={cn(
@@ -23,6 +24,15 @@ export function Card({ title, description, icon, className }: CardProps) {
       )}
       <h3 className="text-xl font-semibold text-navy">{title}</h3>
       <p className="mt-3 leading-relaxed text-muted">{description}</p>
+      {details && details.length > 0 && (
+        <ul className="mt-4 space-y-2 text-sm text-body">
+          {details.map((item) => (
+            <li key={item} className="leading-relaxed">
+              {item}
+            </li>
+          ))}
+        </ul>
+      )}
     </article>
   );
 }

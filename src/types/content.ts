@@ -1,4 +1,4 @@
-export type Locale = "zh" | "es" | "en";
+export type Locale = "zh" | "en" | "es" | "ca";
 
 export type NavLink = {
   label: string;
@@ -8,6 +8,7 @@ export type NavLink = {
 export type CardItem = {
   title: string;
   description: string;
+  details?: string[];
 };
 
 export type IconCardItem = CardItem & {
@@ -29,6 +30,8 @@ export type ContactItem = {
   label: string;
   value: string;
   href?: string;
+  actionLabel?: string;
+  helperText?: string;
 };
 
 export type HeaderContent = {
@@ -56,10 +59,25 @@ export type SectionContent = {
   intro: string;
 };
 
+export type PackageSession = {
+  title: string;
+  description: string;
+};
+
 export type AcademicPreparationContent = SectionContent & {
-  focusLabel: string;
-  points: string[];
-  closingText: string;
+  packageName: string;
+  packagePrice: string;
+  packageSummary: string;
+  whoItsForLabel: string;
+  whoItsForText: string;
+  includesLabel: string;
+  includes: string[];
+  sessionsLabel: string;
+  sessions: PackageSession[];
+  supportDocumentLabel: string;
+  supportDocumentText: string;
+  ctaLabel: string;
+  note?: string;
 };
 
 export type AboutContent = {
@@ -70,6 +88,14 @@ export type AboutContent = {
   credentials: string[];
 };
 
+export type PrivacyBannerContent = {
+  title: string;
+  body: string;
+  continueLabel: string;
+  cookiePolicyLabel: string;
+  privacyPolicyLabel: string;
+};
+
 export type BookingOption = {
   value: string;
   label: string;
@@ -78,41 +104,119 @@ export type BookingOption = {
 export type BookingContent = {
   title: string;
   intro: string;
-  responseTime: string;
-  fallbackContactLabel: string;
-  fallbackContactValue: string;
-  fallbackContactHref: string;
-  formTitle: string;
-  formDescription: string;
-  requiredNotice: string;
-  submitLabel: string;
-  successMessage: string;
-  fields: {
-    fullName: string;
-    email: string;
-    preferredContact: string;
-    contactHandle: string;
-    stage: string;
-    goals: string;
-    sessionLanguage: string;
-    timezone: string;
+  trustItems: string[];
+  paths: {
+    messageUs: {
+      title: string;
+      description: string;
+      helper: string;
+      channels: ContactItem[];
+    };
+    requestCall: {
+      title: string;
+      description: string;
+      ctaLabel: string;
+    };
   };
-  placeholders: {
-    goals: string;
-    timezone: string;
-    contactHandle: string;
+  form: {
+    id: string;
+    title: string;
+    description: string;
+    helper: string;
+    requiredNotice: string;
+    recommendedNotice: string;
+    submitLabel: string;
+    submittingLabel: string;
+    successTitle: string;
+    successMessage: string;
+    successFollowUp: string;
+    resetLabel: string;
+    fields: {
+      fullName: string;
+      email: string;
+      contactHandle: string;
+      role: string;
+      stage: string;
+      supportNeeds: string;
+      sessionLanguage: string;
+      timezone: string;
+      timeWindow: string;
+      message: string;
+      honeypot: string;
+    };
+    hints: {
+      contactHandle: string;
+      message: string;
+    };
+    placeholders: {
+      contactHandle: string;
+      timezone: string;
+      timeWindow: string;
+      message: string;
+    };
+    options: {
+      role: BookingOption[];
+      stage: BookingOption[];
+      supportNeeds: BookingOption[];
+      sessionLanguage: BookingOption[];
+    };
+    validation: {
+      fullNameRequired: string;
+      emailRequired: string;
+      emailInvalid: string;
+      roleRequired: string;
+      stageRequired: string;
+      supportNeedsRequired: string;
+      timezoneRequired: string;
+      timeWindowRequired: string;
+      privacyAcknowledgementRequired: string;
+      submitFailed: string;
+    };
+    privacyNotice: {
+      text: string;
+      cookiePolicyLabel: string;
+      privacyPolicyLabel: string;
+      legalNoticeLabel: string;
+    };
+    privacyAcknowledgement: {
+      labelBeforeLink: string;
+      privacyPolicyLabel: string;
+      labelAfterLink: string;
+    };
+    privacyModal: {
+      triggerLabel: string;
+      title: string;
+      intro: string;
+      sections: {
+        title: string;
+        body: string[];
+      }[];
+      moreInfoText: string;
+      closeLabel: string;
+    };
   };
-  options: {
-    preferredContact: BookingOption[];
-    stage: BookingOption[];
-    sessionLanguage: BookingOption[];
-  };
-  validation: {
-    fullNameRequired: string;
-    emailRequired: string;
-    emailInvalid: string;
-    goalsRequired: string;
-  };
+};
+
+export type PricingCard = {
+  title: string;
+  price: string;
+  description: string;
+  features: string[];
+  highlight?: string;
+};
+
+export type PricingContent = SectionContent & {
+  cards: PricingCard[];
+  footnote: string;
+};
+
+export type ServiceBoundaryContent = {
+  title: string;
+  intro: string;
+  includesTitle: string;
+  excludesTitle: string;
+  includes: string[];
+  excludes: string[];
 };
 
 export type FinalCTAContent = {
@@ -126,13 +230,16 @@ export type FinalCTAContent = {
 export type FooterContent = {
   description: string;
   navLinks: NavLink[];
-  privacyLabel: string;
-  termsLabel: string;
+  privacyPolicyLabel: string;
+  cookiePolicyLabel: string;
+  legalNoticeLabel: string;
+  cookieSettingsLabel?: string;
 };
 
 export type SiteContent = {
   brandName: string;
   localeTagline: string;
+  privacyBanner: PrivacyBannerContent;
   header: HeaderContent;
   hero: HeroContent;
   whoWeHelp: SectionContent & {
@@ -143,7 +250,9 @@ export type SiteContent = {
   services: SectionContent & {
     cards: IconCardItem[];
   };
+  pricing: PricingContent;
   academicPreparation: AcademicPreparationContent;
+  serviceBoundary: ServiceBoundaryContent;
   howItWorks: SectionContent & {
     steps: StepItem[];
   };
