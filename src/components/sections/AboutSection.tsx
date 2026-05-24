@@ -9,17 +9,17 @@ type AboutSectionProps = {
 export function AboutSection({ content }: AboutSectionProps) {
   return (
     <Section id="about" title={content.title} intro={content.intro} className="bg-surface">
-      <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-        <article className="rounded-2xl border border-navy/10 bg-white p-6 shadow-card sm:p-8">
-          <div className="inline-flex rounded-xl bg-navy/5 p-3 text-navy" aria-hidden="true">
-            <NotebookPen className="h-5 w-5" />
+      <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+        <aside className="space-y-5">
+          <div className="overflow-hidden rounded-2xl border border-navy/10 bg-white shadow-card">
+            {/* Replace this founder photo if you want to swap in a different portrait later. */}
+            <img
+              src="/images/founder-about.png"
+              alt="Founder working in a bright Barcelona study setting"
+              className="h-80 w-full object-cover object-center sm:h-[26rem]"
+            />
           </div>
-          <p className="mt-4 text-lg leading-relaxed text-body">{content.story}</p>
-        </article>
-
-        <aside className="space-y-4">
-          {/* Replace this placeholder area with Ying's profile photo if desired. */}
-          <div className="rounded-2xl border border-navy/10 bg-gradient-to-br from-[#fff8ee] to-white p-6 shadow-card">
+          <div className="rounded-2xl border border-navy/10 bg-gradient-to-br from-[#fff8ee] to-white p-6 shadow-card sm:p-7">
             <div className="inline-flex rounded-xl bg-terracotta/10 p-3 text-terracotta" aria-hidden="true">
               <GraduationCap className="h-5 w-5" />
             </div>
@@ -34,6 +34,26 @@ export function AboutSection({ content }: AboutSectionProps) {
             </ul>
           </div>
         </aside>
+
+        <div className="space-y-5">
+          <article className="rounded-2xl border border-navy/10 bg-white p-7 shadow-card sm:p-9">
+            <div className="inline-flex rounded-xl bg-navy/5 p-3 text-navy" aria-hidden="true">
+              <NotebookPen className="h-5 w-5" />
+            </div>
+            <p className="mt-5 max-w-3xl text-[1.08rem] leading-relaxed text-body sm:text-[1.15rem] sm:leading-[1.9]">
+              {content.story}
+            </p>
+          </article>
+
+          <div className="overflow-hidden rounded-2xl border border-navy/10 bg-white shadow-card">
+            {/* Replace this supporting image if you want a different detail shot for the About section later. */}
+            <img
+              src="/images/about-filler.png"
+              alt="Study desk details with Barcelona references and English-learning materials"
+              className="h-64 w-full object-cover object-[center_42%] sm:h-72"
+            />
+          </div>
+        </div>
       </div>
     </Section>
   );

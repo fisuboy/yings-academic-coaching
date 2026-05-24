@@ -18,18 +18,26 @@ export function AcademicPreparationSection({
       className="bg-warm"
     >
       <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-        <article className="rounded-2xl border border-navy/10 bg-white p-6 shadow-card sm:p-8">
-          <p className="inline-flex rounded-full border border-terracotta/20 bg-terracotta/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-terracotta">
-            {content.packageName}
-          </p>
-          <p className="mt-4 text-3xl font-bold text-navy">{content.packagePrice}</p>
-          <p className="mt-3 leading-relaxed text-muted">{content.packageSummary}</p>
+        <article className="overflow-hidden rounded-2xl border border-navy/10 bg-white shadow-card">
+          {/* Replace this package image if you want to swap in a different pre-arrival photo later. */}
+          <img
+            src="/images/pack-image.png"
+            alt="Pre-arrival study preparation materials for Spain"
+            className="h-64 w-full object-cover object-center"
+          />
+          <div className="p-6 sm:p-8">
+            <p className="inline-flex rounded-full border border-terracotta/20 bg-terracotta/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-terracotta">
+              {content.packageName}
+            </p>
+            <p className="mt-4 text-3xl font-bold text-navy">{content.packagePrice}</p>
+            <p className="mt-3 leading-relaxed text-muted">{content.packageSummary}</p>
 
-          <h3 className="mt-6 text-lg font-semibold text-navy">{content.whoItsForLabel}</h3>
-          <p className="mt-2 leading-relaxed text-body">{content.whoItsForText}</p>
+            <h3 className="mt-6 text-lg font-semibold text-navy">{content.whoItsForLabel}</h3>
+            <p className="mt-2 leading-relaxed text-body">{content.whoItsForText}</p>
 
-          <div className="mt-6">
-            <Button href="#booking">{content.ctaLabel}</Button>
+            <div className="mt-6">
+              <Button href="#booking">{content.ctaLabel}</Button>
+            </div>
           </div>
         </article>
 

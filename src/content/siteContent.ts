@@ -42,9 +42,9 @@ const englishContent: SiteContent = {
       "Limited in-person sessions by appointment within Barcelona city",
       "Personalized feedback"
     ],
-    visualEyebrow: "Placeholder Visual",
+    visualEyebrow: "Study Session in Barcelona",
     visualTitle: "Scenario-based English training for international, academic, and study-in-Spain settings",
-    visualSubtitle: "Replace this area with your own study-focused hero image.",
+    visualSubtitle: "A calm, one-to-one study setting that reflects focused support and practical communication work.",
     visualCards: [
       {
         title: "Scenario-Based Training",
@@ -120,13 +120,13 @@ const englishContent: SiteContent = {
           {
             kind: "wechat",
             label: "WeChat",
-            value: "placeholder",
+            value: "Available on request",
             helperText: "Best for quick text updates."
           },
           {
             kind: "whatsapp",
             label: "WhatsApp",
-            value: "placeholder",
+            value: "Available on request",
             helperText: "Best for short follow-up messages."
           }
         ]
@@ -582,8 +582,8 @@ const englishContent: SiteContent = {
         value: "hello@yingstutoring.com",
         href: "mailto:hello@yingstutoring.com"
       },
-      { kind: "wechat", label: "WeChat", value: "placeholder" },
-      { kind: "whatsapp", label: "WhatsApp", value: "placeholder" }
+      { kind: "wechat", label: "WeChat", value: "Available on request" },
+      { kind: "whatsapp", label: "WhatsApp", value: "Available on request" }
     ]
   },
   footer: {
@@ -646,9 +646,9 @@ const spanishContent: SiteContent = {
       "Sesiones presenciales selectivas con cita previa en Barcelona",
       "Feedback personalizado"
     ],
-    visualEyebrow: "Visual de referencia",
+    visualEyebrow: "Sesión de estudio en Barcelona",
     visualTitle: "Formación en inglés basada en escenarios reales de estudio, trabajo y comunicación internacional",
-    visualSubtitle: "Sustituye esta zona por tu imagen principal.",
+    visualSubtitle: "Un entorno tranquilo de trabajo individual que refleja apoyo enfocado y comunicación práctica.",
     visualCards: [
       {
         title: "Entrenamiento por escenarios",
@@ -719,13 +719,13 @@ const spanishContent: SiteContent = {
           {
             kind: "wechat",
             label: "WeChat",
-            value: "placeholder",
+            value: "Disponible bajo solicitud",
             helperText: "Ideal para mensajes cortos y ágiles."
           },
           {
             kind: "whatsapp",
             label: "WhatsApp",
-            value: "placeholder",
+            value: "Disponible bajo solicitud",
             helperText: "Ideal para seguimiento rápido."
           }
         ]
@@ -1161,8 +1161,8 @@ const spanishContent: SiteContent = {
         value: "hello@yingstutoring.com",
         href: "mailto:hello@yingstutoring.com"
       },
-      { kind: "wechat", label: "WeChat", value: "placeholder" },
-      { kind: "whatsapp", label: "WhatsApp", value: "placeholder" }
+      { kind: "wechat", label: "WeChat", value: "Disponible bajo solicitud" },
+      { kind: "whatsapp", label: "WhatsApp", value: "Disponible bajo solicitud" }
     ]
   },
   footer: {
@@ -1217,9 +1217,9 @@ const chineseContent: SiteContent = {
     primaryCta: "预约咨询通话",
     secondaryCta: "联系我们",
     trustItems: ["一对一支持", "线上为主覆盖西班牙", "立足巴塞罗那", "巴塞罗那市内可预约少量线下课程", "个性化反馈"],
-    visualEyebrow: "示意视觉",
+    visualEyebrow: "巴塞罗那学习场景",
     visualTitle: "面向真实学习、工作与国际沟通场景的英语训练",
-    visualSubtitle: "可在此替换为你的品牌主视觉图片。",
+    visualSubtitle: "安静的一对一学习环境，体现专注支持与务实沟通训练。",
     visualCards: [
       { title: "场景化训练", description: "围绕面试、邮件、展示和真实沟通场景进行训练。" },
       { title: "个性化跟进", description: "一对一支持，配合可执行反馈与持续改进。" }
@@ -1279,13 +1279,13 @@ const chineseContent: SiteContent = {
           {
             kind: "wechat",
             label: "微信",
-            value: "placeholder",
+            value: "可按需提供",
             helperText: "适合快速文字沟通。"
           },
           {
             kind: "whatsapp",
             label: "WhatsApp",
-            value: "placeholder",
+            value: "可按需提供",
             helperText: "适合简短跟进。"
           }
         ]
@@ -1697,8 +1697,8 @@ const chineseContent: SiteContent = {
         value: "hello@yingstutoring.com",
         href: "mailto:hello@yingstutoring.com"
       },
-      { kind: "wechat", label: "微信", value: "placeholder" },
-      { kind: "whatsapp", label: "WhatsApp", value: "placeholder" }
+      { kind: "wechat", label: "微信", value: "可按需提供" },
+      { kind: "whatsapp", label: "WhatsApp", value: "可按需提供" }
     ]
   },
   footer: {
@@ -1761,9 +1761,9 @@ const catalanContent: SiteContent = {
       "Sessions presencials limitades amb cita prèvia",
       "Feedback personalitzat"
     ],
-    visualEyebrow: "Visual de referència",
+    visualEyebrow: "Sessió d'estudi a Barcelona",
     visualTitle: "Formació d'anglès basada en escenaris reals d'estudi, feina i comunicació internacional",
-    visualSubtitle: "Substitueix aquesta zona per la teva imatge principal.",
+    visualSubtitle: "Un entorn tranquil de treball individual que transmet suport enfocat i comunicació pràctica.",
     visualCards: [
       {
         title: "Entrenament per escenaris",
@@ -1839,13 +1839,13 @@ const catalanContent: SiteContent = {
           {
             kind: "wechat",
             label: "WeChat",
-            value: "placeholder",
+            value: "Disponible a petició",
             helperText: "Ideal per a missatges curts i àgils."
           },
           {
             kind: "whatsapp",
             label: "WhatsApp",
-            value: "placeholder",
+            value: "Disponible a petició",
             helperText: "Ideal per a seguiment ràpid."
           }
         ]
@@ -2279,8 +2279,8 @@ const catalanContent: SiteContent = {
         value: "hello@yingstutoring.com",
         href: "mailto:hello@yingstutoring.com"
       },
-      { kind: "wechat", label: "WeChat", value: "placeholder" },
-      { kind: "whatsapp", label: "WhatsApp", value: "placeholder" }
+      { kind: "wechat", label: "WeChat", value: "Disponible a petició" },
+      { kind: "whatsapp", label: "WhatsApp", value: "Disponible a petició" }
     ]
   },
   footer: {

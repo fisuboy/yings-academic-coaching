@@ -19,16 +19,16 @@ export function Section({
   children
 }: SectionProps) {
   return (
-    <section id={id} className={cn("px-4 py-16 sm:py-20", className)}>
+    <section id={id} className={cn("px-4 py-14 sm:py-16", className)}>
       <div className={cn("mx-auto w-full max-w-content", containerClassName)}>
         {(title || intro) && (
-          <header className="mb-10 max-w-3xl">
+          <header className="mb-8 max-w-3xl">
             {title && (
-              <h2 className="text-balance text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              <h2 className="text-balance text-[1.9rem] font-bold tracking-tight text-navy sm:text-[2.35rem]">
                 {title}
               </h2>
             )}
-            {intro && <p className="mt-4 text-lg leading-relaxed text-muted">{intro}</p>}
+            {intro && <p className="mt-3 text-base leading-relaxed text-muted sm:text-[1.05rem]">{intro}</p>}
           </header>
         )}
         {children}

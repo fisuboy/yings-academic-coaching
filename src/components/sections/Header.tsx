@@ -37,7 +37,7 @@ export function Header({
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-navy/10 bg-warm/90 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-content items-center justify-between gap-4 px-4 py-3 xl:grid xl:grid-cols-[minmax(220px,250px)_1fr_auto] xl:items-center">
+      <div className="mx-auto flex w-full max-w-content items-center justify-between gap-4 px-4 py-2.5 xl:grid xl:grid-cols-[minmax(210px,238px)_1fr_auto] xl:items-center">
         <a
           href="#home"
           aria-label={brandName}
@@ -50,18 +50,18 @@ export function Header({
             <img
               src="/logo/yings-academic-coaching-logo-header.png"
               alt={brandName}
-              className="h-12 w-auto max-w-[220px] object-contain object-left sm:h-14 sm:max-w-[250px]"
+              className="h-10 w-auto max-w-[205px] object-contain object-left sm:h-12 sm:max-w-[232px]"
               onError={() => setLogoLoadFailed(true)}
             />
           )}
         </a>
 
-        <nav className="hidden items-center justify-center gap-5 xl:flex 2xl:gap-6" aria-label="Primary">
+        <nav className="hidden items-center justify-center gap-4 xl:flex 2xl:gap-5" aria-label="Primary">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="whitespace-nowrap text-sm font-medium text-body transition-colors hover:text-terracotta focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy/25"
+              className="whitespace-nowrap text-[13px] font-medium text-body transition-colors hover:text-terracotta focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy/25 2xl:text-sm"
             >
               {link.label}
             </a>
@@ -78,7 +78,7 @@ export function Header({
                   type="button"
                   onClick={() => onLocaleChange(item.code)}
                   className={cn(
-                    "min-w-11 whitespace-nowrap rounded-lg px-3 py-1.5 text-xs font-semibold leading-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/30",
+                    "min-w-10 whitespace-nowrap rounded-lg px-2.5 py-1.5 text-[11px] font-semibold leading-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/30 2xl:min-w-11 2xl:px-3 2xl:text-xs",
                     locale === item.code
                       ? "bg-navy text-white"
                       : "text-body hover:bg-navy/5"
@@ -91,7 +91,7 @@ export function Header({
               ))}
             </div>
           </div>
-          <Button href="#booking" className="whitespace-nowrap px-4 py-2 text-[13px] 2xl:px-5 2xl:py-2.5 2xl:text-sm">
+          <Button href="#booking" className="whitespace-nowrap px-4 py-2 text-[12px] 2xl:px-5 2xl:text-[13px]">
             {primaryCtaLabel}
           </Button>
         </div>
